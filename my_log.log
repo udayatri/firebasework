@@ -1,0 +1,186 @@
+[2021-10-03T22:52:59] DEBUG  Starting new HTTPS connection (1): api.chat-api.com:443
+[2021-10-03T22:53:00] DEBUG  https://api.chat-api.com:443 "GET /instance294124/takeover?token=bfllgpii7xqb42zq HTTP/1.1" 200 46
+[2021-10-03T22:53:00] ERROR  Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\radhe radhe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\radhe radhe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\radhe radhe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\radhe radhe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\radhe radhe\Desktop\dk_firebase\app.py", line 25, in home
+    ig1.readingGF1()
+  File "c:\Users\radhe radhe\Desktop\dk_firebase\initalGreetings\readingGf1.py", line 24, in readingGF1
+    wt.whattsappTakeover()
+  File "c:\Users\radhe radhe\Desktop\dk_firebase\databaseFunctions\whattsappTakeover.py", line 31, in whattsappTakeover
+    logging.CRITICAL("Instance takingover taking place , will take around 4-5 seconds")
+TypeError: 'int' object is not callable
+[2021-10-03T22:53:00] INFO  127.0.0.1 - - [03/Oct/2021 22:53:00] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2021-10-03T22:54:07] DEBUG  Starting new HTTPS connection (1): api.chat-api.com:443
+[2021-10-03T22:54:08] DEBUG  https://api.chat-api.com:443 "GET /instance294124/takeover?token=bfllgpii7xqb42zq HTTP/1.1" 200 79
+[2021-10-03T22:54:08] INFO  Whattsapp instance is activated
+[2021-10-03T22:54:08] DEBUG  Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[2021-10-03T22:54:08] DEBUG  Making request: POST https://oauth2.googleapis.com/token
+[2021-10-03T22:54:08] DEBUG  Starting new HTTPS connection (1): oauth2.googleapis.com:443
+[2021-10-03T22:54:09] DEBUG  https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+[2021-10-03T22:54:09] DEBUG  Starting new HTTPS connection (1): www.googleapis.com:443
+[2021-10-03T22:54:10] DEBUG  https://www.googleapis.com:443 "GET /drive/v3/files?q=mimeType%3D%22application%2Fvnd.google-apps.spreadsheet%22+and+name+%3D+%22Dev+Session+Record+CRM+version%22&pageSize=1000&supportsAllDrives=True&includeItemsFromAllDrives=True HTTP/1.1" 200 None
+[2021-10-03T22:54:10] DEBUG  Starting new HTTPS connection (1): sheets.googleapis.com:443
+[2021-10-03T22:54:11] DEBUG  https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1hCgk0MV0HTMGvH0rcFYG1de3tGTEs_VGMl3elnWK__o?includeGridData=false HTTP/1.1" 200 None
+[2021-10-03T22:54:12] DEBUG  https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1hCgk0MV0HTMGvH0rcFYG1de3tGTEs_VGMl3elnWK__o/values/%27GF1%27?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+[2021-10-03T22:54:12] DEBUG  Starting new HTTPS connection (1): firstfirebaseproject-ced34-default-rtdb.firebaseio.com:443
+[2021-10-03T22:54:13] DEBUG  https://firstfirebaseproject-ced34-default-rtdb.firebaseio.com:443 "POST /GF1/.json HTTP/1.1" 200 31
+[2021-10-03T22:54:13] DEBUG  Starting new HTTPS connection (1): firstfirebaseproject-ced34-default-rtdb.firebaseio.com:443
+[2021-10-03T22:54:14] DEBUG  https://firstfirebaseproject-ced34-default-rtdb.firebaseio.com:443 "GET /clientDetails/.json HTTP/1.1" 200 4
+[2021-10-03T22:54:14] DEBUG  Starting new HTTPS connection (1): firstfirebaseproject-ced34-default-rtdb.firebaseio.com:443
+[2021-10-03T22:54:15] DEBUG  https://firstfirebaseproject-ced34-default-rtdb.firebaseio.com:443 "POST /clientDetails/.json HTTP/1.1" 200 31
+[2021-10-03T22:54:15] DEBUG  Starting new HTTPS connection (1): api.chat-api.com:443
+[2021-10-03T22:54:16] DEBUG  https://api.chat-api.com:443 "GET /instance294124/checkPhone?token=bfllgpii7xqb42zq&phone=918284990439 HTTP/1.1" 200 19
+[2021-10-03T22:54:16] DEBUG  Starting new HTTPS connection (1): api.chat-api.com:443
+[2021-10-03T22:54:17] DEBUG  https://api.chat-api.com:443 "POST /instance294124/sendMessage?token=bfllgpii7xqb42zq HTTP/1.1" 200 121
+[2021-10-03T22:54:17] INFO  {"sent":true,"message":"Sent to 918284990439@c.us","id":"true_918284990439@c.us_3EB0B2FB8FD06792E99B","queueNumber":5032}
+[2021-10-03T22:54:18] DEBUG  Starting new HTTPS connection (1): api.chat-api.com:443
+[2021-10-03T22:54:18] DEBUG  https://api.chat-api.com:443 "POST /instance294124/sendLink?token=bfllgpii7xqb42zq HTTP/1.1" 200 121
+[2021-10-03T22:54:18] INFO  {"sent":true,"message":"Sent to 918284990439@c.us","id":"true_918284990439@c.us_3EB0A45D31A7F1826413","queueNumber":5033}
+[2021-10-03T22:54:19] DEBUG  Starting new HTTPS connection (1): api.chat-api.com:443
+[2021-10-03T22:54:22] DEBUG  https://api.chat-api.com:443 "GET /instance294124/sendMessage?token=bfllgpii7xqb42zq HTTP/1.1" 200 121
+[2021-10-03T22:54:22] INFO  {"sent":true,"message":"Sent to 918284990439@c.us","id":"true_918284990439@c.us_3EB0CF91B5DE7560D088","queueNumber":5034}
+[2021-10-03T22:54:22] DEBUG  Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[2021-10-03T22:54:22] DEBUG  Making request: POST https://oauth2.googleapis.com/token
+[2021-10-03T22:54:22] DEBUG  Starting new HTTPS connection (1): oauth2.googleapis.com:443
+[2021-10-03T22:54:23] DEBUG  https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+[2021-10-03T22:54:23] DEBUG  Starting new HTTPS connection (1): www.googleapis.com:443
+[2021-10-03T22:54:24] DEBUG  https://www.googleapis.com:443 "GET /drive/v3/files?q=mimeType%3D%22application%2Fvnd.google-apps.spreadsheet%22+and+name+%3D+%22Dev+Session+Record+CRM+version%22&pageSize=1000&supportsAllDrives=True&includeItemsFromAllDrives=True HTTP/1.1" 200 None
+[2021-10-03T22:54:24] DEBUG  Starting new HTTPS connection (1): sheets.googleapis.com:443
+[2021-10-03T22:54:25] DEBUG  https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1hCgk0MV0HTMGvH0rcFYG1de3tGTEs_VGMl3elnWK__o?includeGridData=false HTTP/1.1" 200 None
+[2021-10-03T22:54:25] DEBUG  https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1hCgk0MV0HTMGvH0rcFYG1de3tGTEs_VGMl3elnWK__o/values/%27GF2%27?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+[2021-10-03T22:54:25] INFO  127.0.0.1 - - [03/Oct/2021 22:54:25] "GET / HTTP/1.1" 200 -
+[2021-10-03T22:56:03] INFO  Whattsapp instance is activated
+[2021-10-03T22:56:10] INFO  {"sent":true,"message":"Sent to 918284990439@c.us","id":"true_918284990439@c.us_3EB038C2E42B81A8EF52","queueNumber":5035}
+[2021-10-03T22:56:12] INFO  {"sent":true,"message":"Sent to 918284990439@c.us","id":"true_918284990439@c.us_3EB0BC00655417D15126","queueNumber":5036}
+[2021-10-03T22:56:17] INFO  {"sent":true,"message":"Sent to 918284990439@c.us","id":"true_918284990439@c.us_3EB07C5033DDB9B604D7","queueNumber":5037}
+[2021-10-03T22:56:20] INFO  127.0.0.1 - - [03/Oct/2021 22:56:20] "GET / HTTP/1.1" 200 -
+[2021-10-05T17:38:00] ERROR  Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\env\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\env\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\env\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\env\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 25, in home
+    ig1.readingGF1()
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\initalGreetings\readingGf1.py", line 24, in readingGF1
+    wt.whattsappTakeover()
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\databaseFunctions\whattsappTakeover.py", line 31, in whattsappTakeover
+    logging.CRITICAL("Instance takingover taking place , will take around 4-5 seconds")
+TypeError: 'int' object is not callable
+[2021-10-05T17:38:00] INFO  127.0.0.1 - - [05/Oct/2021 17:38:00] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2021-10-05T17:38:39] INFO  Whattsapp instance is activated
+[2021-10-05T17:38:49] INFO  {"sent":true,"message":"Sent to 918290105400@c.us","id":"true_918290105400@c.us_3EB06EF9D743C068678E","queueNumber":5038}
+[2021-10-05T17:38:51] INFO  {"sent":true,"message":"Sent to 918290105400@c.us","id":"true_918290105400@c.us_3EB085792DF48501A453","queueNumber":5039}
+[2021-10-05T17:38:53] INFO  {"sent":true,"message":"Sent to 918290105400@c.us","id":"true_918290105400@c.us_3EB0E4708A53B605010B","queueNumber":5040}
+[2021-10-05T17:38:59] INFO  {"sent":true,"message":"Sent to 919625233122@c.us","id":"true_919625233122@c.us_3EB0D4496F117B83F00A","queueNumber":5041}
+[2021-10-05T17:39:00] INFO  {"sent":true,"message":"Sent to 919625233122@c.us","id":"true_919625233122@c.us_3EB0BBC9E11E38297450","queueNumber":5042}
+[2021-10-05T17:39:02] INFO  {"sent":true,"message":"Sent to 919625233122@c.us","id":"true_919625233122@c.us_3EB0C2EC1D5286EFE3B0","queueNumber":5043}
+[2021-10-05T17:39:07] INFO  {"sent":true,"message":"Sent to 919140815143@c.us","id":"true_919140815143@c.us_3EB005987B3401FC0721","queueNumber":5044}
+[2021-10-05T17:39:09] INFO  {"sent":true,"message":"Sent to 919140815143@c.us","id":"true_919140815143@c.us_3EB0B9A1852494EA6310","queueNumber":5045}
+[2021-10-05T17:39:10] INFO  {"sent":true,"message":"Sent to 919140815143@c.us","id":"true_919140815143@c.us_3EB02114F81B4235479E","queueNumber":5046}
+[2021-10-05T17:39:15] INFO  {"sent":true,"message":"Sent to 918638090309@c.us","id":"true_918638090309@c.us_3EB0FB92A96D5341E348","queueNumber":5047}
+[2021-10-05T17:39:17] INFO  {"sent":true,"message":"Sent to 918638090309@c.us","id":"true_918638090309@c.us_3EB0F9F7CDABBBF5A834","queueNumber":5048}
+[2021-10-05T17:39:19] INFO  {"sent":true,"message":"Sent to 918638090309@c.us","id":"true_918638090309@c.us_3EB00629A994CE51B6CC","queueNumber":5049}
+[2021-10-05T17:39:23] INFO  {"sent":true,"message":"Sent to 917840845943@c.us","id":"true_917840845943@c.us_3EB0AE37B678F2455BD7","queueNumber":5050}
+[2021-10-05T17:39:25] INFO  {"sent":true,"message":"Sent to 917840845943@c.us","id":"true_917840845943@c.us_3EB0D2C3C0A36E607EF6","queueNumber":5051}
+[2021-10-05T17:39:27] INFO  {"sent":true,"message":"Sent to 917840845943@c.us","id":"true_917840845943@c.us_3EB0E04657866C6E3323","queueNumber":5052}
+[2021-10-05T17:39:31] INFO  {"sent":true,"message":"Sent to 918252483141@c.us","id":"true_918252483141@c.us_3EB088AFC1808F5424A7","queueNumber":5053}
+[2021-10-05T17:39:33] INFO  {"sent":true,"message":"Sent to 918252483141@c.us","id":"true_918252483141@c.us_3EB03A4F3427721369F2","queueNumber":5054}
+[2021-10-05T17:39:35] INFO  {"sent":true,"message":"Sent to 918252483141@c.us","id":"true_918252483141@c.us_3EB0405675A673F12BD3","queueNumber":5055}
+[2021-10-05T17:39:40] INFO  {"sent":true,"message":"Sent to 919599755321@c.us","id":"true_919599755321@c.us_3EB03997C3FE79BAA1AD","queueNumber":5056}
+[2021-10-05T17:39:42] INFO  {"sent":true,"message":"Sent to 919599755321@c.us","id":"true_919599755321@c.us_3EB02A5AD1E0DE822246","queueNumber":5057}
+[2021-10-05T17:39:43] INFO  {"sent":true,"message":"Sent to 919599755321@c.us","id":"true_919599755321@c.us_3EB00F82AD5856AC391B","queueNumber":5058}
+[2021-10-05T17:39:48] INFO  {"sent":true,"message":"Sent to 917746955766@c.us","id":"true_917746955766@c.us_3EB00BA88A0CF7F43D29","queueNumber":5059}
+[2021-10-05T17:39:50] INFO  {"sent":true,"message":"Sent to 917746955766@c.us","id":"true_917746955766@c.us_3EB02B00BAE914BFEAB1","queueNumber":5060}
+[2021-10-05T17:39:52] INFO  {"sent":true,"message":"Sent to 917746955766@c.us","id":"true_917746955766@c.us_3EB07950A0145900E0A9","queueNumber":5061}
+[2021-10-05T17:39:59] INFO  {"sent":true,"message":"Sent to 918076163269@c.us","id":"true_918076163269@c.us_3EB0061B057B85FCD635","queueNumber":5062}
+[2021-10-05T17:40:01] INFO  {"sent":true,"message":"Sent to 918076163269@c.us","id":"true_918076163269@c.us_3EB0069FE18E1EB4809D","queueNumber":5063}
+[2021-10-05T17:40:02] INFO  {"sent":true,"message":"Sent to 918076163269@c.us","id":"true_918076163269@c.us_3EB0019735723BB508F0","queueNumber":5064}
+[2021-10-05T17:40:08] INFO  {"sent":true,"message":"Sent to 918351940740@c.us","id":"true_918351940740@c.us_3EB0A1B51352565A4A4E","queueNumber":5065}
+[2021-10-05T17:40:10] INFO  {"sent":true,"message":"Sent to 918351940740@c.us","id":"true_918351940740@c.us_3EB001DA96C826583FCE","queueNumber":5066}
+[2021-10-05T17:40:12] INFO  {"sent":true,"message":"Sent to 918351940740@c.us","id":"true_918351940740@c.us_3EB0138D846E882D6608","queueNumber":5067}
+[2021-10-05T17:40:17] INFO  {"sent":true,"message":"Sent to 919670640189@c.us","id":"true_919670640189@c.us_3EB05391427B904E5C0F","queueNumber":5068}
+[2021-10-05T17:40:19] INFO  {"sent":true,"message":"Sent to 919670640189@c.us","id":"true_919670640189@c.us_3EB06B9F25CE49F658AF","queueNumber":5069}
+[2021-10-05T17:40:21] INFO  {"sent":true,"message":"Sent to 919670640189@c.us","id":"true_919670640189@c.us_3EB065B6AD6EAAEA3540","queueNumber":5070}
+[2021-10-05T17:40:26] INFO  {"sent":true,"message":"Sent to 919871494522@c.us","id":"true_919871494522@c.us_3EB03217FD264B75F768","queueNumber":5071}
+[2021-10-05T17:40:27] INFO  {"sent":true,"message":"Sent to 919871494522@c.us","id":"true_919871494522@c.us_3EB0488BCBF27958D235","queueNumber":5072}
+[2021-10-05T17:40:29] INFO  {"sent":true,"message":"Sent to 919871494522@c.us","id":"true_919871494522@c.us_3EB003E9AF58C425B1E0","queueNumber":5073}
+[2021-10-05T17:40:34] INFO  {"sent":true,"message":"Sent to 917644092117@c.us","id":"true_917644092117@c.us_3EB0CAD4DAEBA9A079F4","queueNumber":5074}
+[2021-10-05T17:40:36] INFO  {"sent":true,"message":"Sent to 917644092117@c.us","id":"true_917644092117@c.us_3EB0A92AF8AAAFDD6F37","queueNumber":5075}
+[2021-10-05T17:40:38] INFO  {"sent":true,"message":"Sent to 917644092117@c.us","id":"true_917644092117@c.us_3EB0F1B3F66539DB11BD","queueNumber":5076}
+[2021-10-05T17:40:42] INFO  {"sent":true,"message":"Sent to 919711151149@c.us","id":"true_919711151149@c.us_3EB0C06B26EBFEE2E7B1","queueNumber":5077}
+[2021-10-05T17:40:45] INFO  {"sent":true,"message":"Sent to 919711151149@c.us","id":"true_919711151149@c.us_3EB04FF2627C3D05EEC8","queueNumber":5078}
+[2021-10-05T17:40:47] INFO  {"sent":true,"message":"Sent to 919711151149@c.us","id":"true_919711151149@c.us_3EB0A4172C434C7A91D7","queueNumber":5079}
+[2021-10-05T17:40:47] INFO  127.0.0.1 - - [05/Oct/2021 17:40:47] "GET / HTTP/1.1" 200 -
+[2021-10-06T08:51:47] ERROR  Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\env\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\env\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\env\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\env\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 25, in home
+    ig1.readingGF1()
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\initalGreetings\readingGf1.py", line 24, in readingGF1
+    wt.whattsappTakeover()
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\databaseFunctions\whattsappTakeover.py", line 31, in whattsappTakeover
+    logging.CRITICAL("Instance takingover taking place , will take around 4-5 seconds")
+TypeError: 'int' object is not callable
+[2021-10-06T08:51:47] INFO  127.0.0.1 - - [06/Oct/2021 08:51:47] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2021-10-06T08:52:00] INFO  Whattsapp instance is activated
+[2021-10-06T08:52:08] ERROR  Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\env\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\env\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\env\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\env\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 25, in home
+    ig1.readingGF1()
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\initalGreetings\readingGf1.py", line 68, in readingGF1
+    sdm.F(name,email)
+AttributeError: module 'contactMethods.mail.sendMail' has no attribute 'F'
+[2021-10-06T08:52:08] INFO  127.0.0.1 - - [06/Oct/2021 08:52:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2021-10-06T08:52:43] INFO  Whattsapp instance is activated
+[2021-10-06T08:53:02] INFO  127.0.0.1 - - [06/Oct/2021 08:53:02] "GET / HTTP/1.1" 200 -
+[2021-10-06T23:15:16] ERROR  Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\env\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\env\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\env\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\env\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 25, in home
+    ig1.readingGF1()
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\initalGreetings\readingGf1.py", line 24, in readingGF1
+    wt.whattsappTakeover()
+  File "C:\Users\hp\Desktop\deepanshu\previousVersion\hello_World_updated\dk_firebase\databaseFunctions\whattsappTakeover.py", line 31, in whattsappTakeover
+    logging.CRITICAL("Instance takingover taking place , will take around 4-5 seconds")
+TypeError: 'int' object is not callable
+[2021-10-06T23:15:16] INFO  127.0.0.1 - - [06/Oct/2021 23:15:16] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2021-10-06T23:15:19] INFO  127.0.0.1 - - [06/Oct/2021 23:15:19] "GET /admin HTTP/1.1" 200 -
+[2021-10-06T23:15:39] INFO  127.0.0.1 - - [06/Oct/2021 23:15:39] "GET /addingCaledlydetails HTTP/1.1" 200 -
+[2021-10-06T23:20:20] INFO  127.0.0.1 - - [06/Oct/2021 23:20:20] "POST /addingCalendlyUrlInfo HTTP/1.1" 200 -
+[2021-10-06T23:22:50] INFO  127.0.0.1 - - [06/Oct/2021 23:22:50] "POST /addingCalendlyUrlInfo HTTP/1.1" 200 -
+[2021-10-06T23:24:50] INFO  127.0.0.1 - - [06/Oct/2021 23:24:50] "POST /addingCalendlyUrlInfo HTTP/1.1" 200 -
